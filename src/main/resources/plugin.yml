@@ -1,4 +1,4 @@
-name: UnraveledMCMod
+name: AwesomeFreedomMod
 main: me.unraveledmc.unraveledmcmod.UnraveledMCMod
 version: ${tfm.build.version}
 description: Plugin for the UnraveledMC server.
