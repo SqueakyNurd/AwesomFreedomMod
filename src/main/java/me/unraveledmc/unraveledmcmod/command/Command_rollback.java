@@ -23,7 +23,7 @@ public class Command_rollback extends FreedomCommand
         {
             final String playerName = args[0];
             FUtil.adminAction(sender.getName(), "Rolling back player: " + playerName, false);
-            server.dispatchCommand(sender, "co rb u:" + playerName + " t:6w r:#global");
+            server.dispatchCommand(sender, "co rb u:" + playerName + " t:6w r:#global #silent");
             msg("If this rollback was a mistake, use /rollback undo " + playerName + " to reverse the rollback.");
             return true;
         }
@@ -34,7 +34,7 @@ public class Command_rollback extends FreedomCommand
             {
                 final String playerName = args[1];
                 FUtil.adminAction(sender.getName(), "Reverting rollback for player: " + playerName, false);
-                server.dispatchCommand(sender, "co restore u:" + playerName + " t:6w r:#global");
+                server.dispatchCommand(sender, "co restore u:" + playerName + " t:6w r:#global #silent");
                 return true;
             }
         }
